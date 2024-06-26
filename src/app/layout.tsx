@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/block/navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-primary-foreground text-foreground">
-      <body className={`${inter.className} min-h-screen w-full`}>{children}</body>
+      <body className={`${inter.className} min-h-screen w-full`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
