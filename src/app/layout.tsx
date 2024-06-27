@@ -1,14 +1,8 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { GeistSans } from "geist/font/sans";
 import Navbar from "@/components/block/navbar";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  adjustFontFallback: false,
-});
 
 export const metadata: Metadata = {
   title: "rusign-ui",
@@ -22,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-primary-foreground text-foreground">
-      <body className={`${inter.className} min-h-screen w-full`}>
+      <body className={`${GeistSans.className} min-h-screen w-full`}>
         <Navbar />
         {children}
       </body>

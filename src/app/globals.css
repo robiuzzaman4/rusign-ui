@@ -29,3 +29,10 @@
     --ru-radius: 0.8rem;
   }
 }
+
+@layer base {
+  ::selection {
+    color: hsl(var(--ru-background));
+    background: hsl(var(--ru-primary));
+  }
+}
