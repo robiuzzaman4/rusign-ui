@@ -17,7 +17,7 @@ export default Showcase;
 
 const Card = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="grid h-52 w-full place-items-center rounded-xl border border-border bg-background hover:bg-background/40">
+    <div className="grid h-52 w-full place-items-center rounded-lg border border-border bg-background hover:bg-background/40">
       <h1 className="text-xl font-medium">{children}</h1>
     </div>
   );

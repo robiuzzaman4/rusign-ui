@@ -36,6 +36,11 @@ const config: Config = {
           foreground: "hsl(var(--ru-accent-foreground))",
         },
       },
+      borderRadius: {
+        lg: "var(--ru-radius)",
+        sm: "calc(var(--ru-radius) - 4px)",
+        md: "calc(var(--ru-radius) - 2px)",
+      },
     },
   },
   plugins: [],

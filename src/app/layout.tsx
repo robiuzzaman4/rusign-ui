@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-primary-foreground text-foreground">
+      <link rel="icon" href="/rusign-ui-letter.jpg" />
       <body className={`${GeistSans.className} min-h-screen w-full`}>
         <Navbar />
         {children}
